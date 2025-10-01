@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.6.2/dist/dotlottie-wc.js" type="module"></script>
+      <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Audiowide|Inter|Atma|Poppins|Montserrat' />
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="display" class="bgstyle">
+  <span id="country">Addis Ababa,ET</span> 
+<span style="font-weight: bolder;font-size: 4rem;" id="real-temp">18°C</span>
+<span id="type-icon"><span>Cloudy</span>
+  <dotlottie-wc src="https://lottie.host/401efee6-477d-410a-bd6b-a50092ec2785/AUEYaTiQl3.lottie" style="width: 30px;height: 30px" speed="1" autoplay loop></dotlottie-wc>
+</span>
+</div>
+
+<div id="extra-infos">
+
+  <div id="cld-pct-cn" class="extra-info">
+    <img src="/assets/clouds.png" alt="">
+  <span>Cloud %age</span>
+  <span id="cloud%age">75%</span>
+</div>
+<div id="feels-like-cn" class="extra-info">
+  <img src="assets/customer-satisfaction.png" alt="" style="width: 40px;">
+  <span>Feels Like</span>
+  <span id="feelsliketemp">17°</span>
+</div>
+<div id="humidity-cn" class="extra-info">
+  <img src="/assets/humidity.png" alt="">
+  <span>Humidity</span>
+  <span id="humidity">72%</span>
+</div>
+<div id="min-max-cn" class="extra-info">
+  <img src="assets/measuring.png" alt="">
+  <span>Min-Max</span>
+  <span id="min-max">12°/22°</span>
+</div>
+<div id="wind-speed-cn" class="extra-info">
+  <img src="assets/wind-turbine.png" alt="">
+  <span>Wind Speed</span>
+  <span id="wind-speed">2.57</span>
+</div>
+<div id="wind-degrees-cn" class="extra-info">
+  <img src="assets/nature.png" alt="">
+  <span>Wind degrees</span>
+  <span id="wind-degrees">250</span>
+</div>
+</div>
+<footer>
+  <p>Weather info provided by <a href="/api-ninjas">Api Ninjas</a></p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
